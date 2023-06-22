@@ -676,7 +676,7 @@ width: 125px;
 /* ------ Form section ----------- */
 
 
-.form-parent{
+#form-parent{
     position: fixed;
     /* left: 20%; */
     display: none;

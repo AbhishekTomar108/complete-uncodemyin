@@ -5,9 +5,10 @@
 }
 
 .banner-right-left-box-container{
-    display: grid;
-    grid-template-columns: 60% 30%;
-    justify-content: space-around;
+
+   flex-wrap: nowrap !important;
+   justify-content: space-around;
+   margin: 0 !important;
 
 }
 
@@ -189,14 +190,16 @@ select:-webkit-autofill {
 
 .Placement-training {
     padding: 0;
-    flex-wrap: nowrap;
+    width: fit-content;
     display: flex;
     height: 65px;
-    justify-content: space-between
-    0 10rem 0 0rem !important;
+    column-gap: 10px;
+    justify-content: space-around
 }
 
-
+.Placement-training button{
+    font-size: 14px !important;
+}
 
 
 .header-top {
@@ -290,23 +293,24 @@ select:-webkit-autofill {
 }
 
 .course-banner-sections-left .sub-heading p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
-    width: 34rem;
 }
 
 .course-banner-sections-left .course-ratings {
     display: flex;
     margin-top: 13px;
-    align-items: center
+    justify-content: center;
 }
 
 .course-ratings .course-ratings-stars {
     width: 100%
 }
 
+
+
+
 .course-google-rating {
-    margin-right: 25px !important;
     letter-spacing: 1px;
     display: flex;
     align-items: center
@@ -365,7 +369,6 @@ select:-webkit-autofill {
     
         margin-top: 32px;
         margin-bottom: 25px;
-        width: 722px;
         background: #ff5421;
         height: 2px;
     
@@ -539,10 +542,9 @@ select:-webkit-autofill {
     transition: all .5s ease;
     font-size: 12px;
     font-weight: 500;
-    padding: 18px 9px;
     margin-right: 26px;
+    margin: 0 !important;
     text-decoration: none !important;
-    margin: -17px 1px -2px -6px;
 }
 
 

@@ -10571,7 +10571,6 @@ h2{
 
 
 
-
     .course-banner-sections-left .sub-heading p {
         font-size: 14px !important;
         font-weight: 400;
@@ -10810,7 +10809,6 @@ cursor: pointer;
   .rating-img{
     display: flex;
     margin-bottom: 22px;
-    margin: 0 36px 0 40px !important;
 }
   
 
@@ -10866,17 +10864,13 @@ cursor: pointer;
   .pt-5, .py-5 {
     padding-top: 0rem!important;
   }
-  .video{ 
-    margin: -6rem 0 0 0 !important;
-  }
+
 
   p{
     font-size: 14px !important;
     text-align: justify !important;
   }
-  form{
-    margin-top: -2rem !important;
-  }
+
 
   .banner-date-2 .banner-detail .date-border img {
 
@@ -11005,7 +10999,7 @@ text-align: center !important;
     display: flex;
     /* height: 30px !important; */
     width: 65px;
-    margin-left: -9rem;
+    align-items: center;
 }
 .section-title{
   margin: 0 !important;
@@ -11153,10 +11147,15 @@ text-align: center !important;
 }
 .college{
  display: flex; 
+ width: 100%;
+ justify-content: space-around;
 }
+
+
 .college .school{
   height: 35px !important;
-  margin: 10px 20px 0 20px !important;
+  max-width: 100px !important;
+  
 }
 .nav-link .im{
   max-width: 101px !important;
@@ -11249,9 +11248,7 @@ html{
 .certi b{
   padding: 25px 0 0 0  !important;
  }
- .cer-details{
-  margin: -3rem 0 0 0 !important;
- }
+
 
  .para{
   display: inline-block;

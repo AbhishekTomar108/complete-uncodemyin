@@ -471,9 +471,9 @@ function hidePopUpForm(){
 
 function showForm(){
 
-  const formConatiner = document.querySelector('.form-parent')
-  document.querySelector('.form-parent').style.display="block"
-  document.querySelector('.form-parent').style.top="3%"
+  const formConatiner = document.getElementById('form-parent')
+  document.getElementById('form-parent').style.display="block"
+  document.getElementById('form-parent').style.top="3%"
 
   formConatiner.style.animation = "fallingEffect .5s ease-in-out";
   formConatiner.style.animationFillMode = "forwards";
@@ -483,7 +483,7 @@ function showForm(){
 
 
 function hideForm(){
-  document.querySelector('.form-parent').style.display="none"
+  document.getElementById('form-parent').style.display="none"
   document.body.style.overflow='auto'
   document.getElementById('overlay').style.display="none"
 }
@@ -725,26 +725,5 @@ async function paymentGateway(){
 }
 
 
-function fullScreen(){
-  console.log('full screen running')
 
-  var event = new KeyboardEvent('keydown', {
-    key: 'F11',
-    keyCode: 122,
-    which: 122,
-    code: 'F11',
-    location: 0,
-    ctrlKey: false,
-    shiftKey: false,
-    altKey: false,
-    metaKey: false,
-    repeat: false,
-    isComposing: false,
-    charCode: 0,
-    char: ''
-  });
-
-  document.dispatchEvent(event);
-
-}
 
