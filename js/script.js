@@ -587,11 +587,12 @@ function setFormValue(name,value){
 
 }
 
-function numberOnly() {
+function numberOnly(inputId) {
 
-
+  console.log('number only running')
+   document.getElementById
   // Get element by id which passed as parameter within HTML element event
-  var element = document.getElementById('mobile-input');
+  var element = document.getElementById(inputId);
   // This removes any other character but numbers as entered by user
   element.value = element.value.replace(/[^0-9]/gi, "");
 
@@ -603,8 +604,15 @@ function numberOnly() {
 }
 
 
+document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevents the default form submission
+  
+  var currentForm = event.target; // Get the form that triggered the submit event
+  currentForm.reset(); // Reset the current form
+});
 
-async function submitForm(event) {
+
+async function submitForm(event,index) {
   event.preventDefault(); 
 
 
@@ -618,16 +626,16 @@ async function submitForm(event) {
  
 
   try{
-    const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmitUncodemyIn.php', data);
+    const response = await axios.post('https://www.uncodemy.in/formSubmitUncodemyIn.php', data);
 
     
     if(response.data===1){
 
       
-  document.querySelector('.form-parent').style.display="none"
+  document.getElementById('form-parent').style.display="none"
   document.body.style.overflow='auto'
   document.getElementById('overlay').style.display="none"
-  document.getElementById("form").reset();
+  document.getElementsByClassName("form")[index].reset();
 
       Swal.fire({
         icon: 'success',
@@ -668,11 +676,12 @@ async function submitPopUpForm(event) {
   data.append('fromTime', popUpFormValue.fromTime);
   data.append('toTime', popUpFormValue.toTime);
  
+  console.log('data =',data, popUpFormValue.name)
 
   try{
-    const response = await axios.post('http://localhost/DemoDetailForm.php', data);
+    const response = await axios.post('https://www.uncodemy.in/DemoDetailForm.php', data);
 
-
+    console.log('data =',data, popUpFormValue.name)
     
     if(response.data===1){
 
@@ -710,19 +719,6 @@ async function submitPopUpForm(event) {
 //  ---------- payment gateway -----------
 
 
-async function paymentGateway(){
-  console.log('payment running')
-
-  try{
-    const response = await axios.post('http://localhost/payment.php');
-
-    console.log(response)
-  }
-
-  catch{
-
-  }
-}
 
 
 

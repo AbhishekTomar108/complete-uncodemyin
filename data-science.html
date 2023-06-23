@@ -346,7 +346,7 @@
             <section class="course-banner">
                 <div class="container-fluid">
                     <div class="banner-right-left-box-container row align-items-center d-flex">
-                        <div style="max-width: 100% !important;" class="banner-left-box">
+                        <div class="banner-left-box">
 
                             <div class="col-md-8">
                                 <div class="course-banner-sections-left">
@@ -3006,7 +3006,7 @@ cursor: pointer;" id="apply-btn" type="button" class="btn btn-primary" data-togg
             <div class="form-header-container">
                 <div class="header-section">Application Form</div>
                 <div class="form-container footer-form-container">
-                    <form onsubmit="submitForm(event)" id="form" class="footer-form">
+                    <form onsubmit="submitForm(event,0)" class="form" class="footer-form">
                         <div class="input-section name-section">
                         <input type="text" required name="name" onchange="setFormValue(this.name,this.value)">
                         <label>Name</label>
@@ -3018,7 +3018,7 @@ cursor: pointer;" id="apply-btn" type="button" class="btn btn-primary" data-togg
                     </div>
     
                     <div class="input-section name-section">
-                        <input type="tel" required maxlength="10" minlength="10" id="mobile-input" name="mobile" oninput="numberOnly()"  onchange="setFormValue(this.name,this.value)">
+                        <input type="tel" required maxlength="10" minlength="10" id="mobile-input-1" name="mobile" oninput="numberOnly('mobile-input-1')"  onchange="setFormValue(this.name,this.value)">
                         <label>Phone Number</label>
                     </div>
                     <div class="input-section name-section">
@@ -3949,7 +3949,7 @@ width: 50%;" src="/img/download.png" alt="4 Unique Specializations - data scienc
             <div class="form-header-container">
                 <div class="header-section">Application Form</div>
                 <div class="form-container footer-form-container">
-                    <form onsubmit="submitForm(event)" id="form" class="footer-form">
+                    <form onsubmit="submitForm(event,1)" class="form" class="footer-form">
                         <div class="input-section name-section">
                         <input type="text" required name="name" onchange="setFormValue(this.name,this.value)">
                         <label>Name</label>
@@ -3961,7 +3961,7 @@ width: 50%;" src="/img/download.png" alt="4 Unique Specializations - data scienc
                     </div>
     
                     <div class="input-section name-section">
-                        <input type="tel" required maxlength="10" minlength="10" id="mobile-input" name="mobile" oninput="numberOnly()"  onchange="setFormValue(this.name,this.value)">
+                        <input type="tel" required maxlength="10" minlength="10" id="mobile-input-2" name="mobile" oninput="numberOnly('mobile-input-2')"  onchange="setFormValue(this.name,this.value)">
                         <label>Phone Number</label>
                     </div>
                     <div class="input-section name-section">
@@ -4207,7 +4207,7 @@ width: 50%;" src="/img/download.png" alt="4 Unique Specializations - data scienc
                 </div>
 
                 <div class="input-section name-section">
-                    <input type="tel" required maxlength="10" minlength="10" id="mobile-input" name="mobile" oninput="numberOnly()"  onchange="setFormValue(this.name,this.value)">
+                    <input type="tel" required maxlength="10" minlength="10" id="mobile-input-3" name="mobile" oninput="numberOnly('mobile-input-3')"  onchange="setFormValue(this.name,this.value)">
                     <label>Phone Number</label>
                 </div>
                 <div class="input-section name-section">
@@ -4256,9 +4256,9 @@ width: 50%;" src="/img/download.png" alt="4 Unique Specializations - data scienc
             <div class="form-top-head">
                 Application Form
             </div>
-            <form onsubmit="submitPopUpForm(event)">
+            <form onsubmit="submitPopUpForm(event)" id="form">
                 <input type="text" placeholder="Enter Your Name*" required name="name" onchange="setPopUpFormValue(this.name, this.value)">
-                <input type="tel" required maxlength="10" minlength="10" id="mobile-input" name="mobile" oninput="numberOnly()" placeholder="Enter Your Phone No.*" required name="name" onchange="setPopUpFormValue(this.name, this.value)">
+                <input type="tel" required maxlength="10" minlength="10" id="mobile-input-4" name="mobile" oninput="numberOnly('mobile-input-4')" placeholder="Enter Your Phone No.*" required name="name" onchange="setPopUpFormValue(this.name, this.value)">
                 <input type="email" placeholder="Enter Your Email*" required name="email" onchange="setPopUpFormValue(this.name, this.value)">
     
                 <select name="course" required onchange="setPopUpFormValue(this.name, this.value)">
@@ -4320,6 +4320,10 @@ width: 50%;" src="/img/download.png" alt="4 Unique Specializations - data scienc
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

@@ -198,7 +198,10 @@ select:-webkit-autofill {
 }
 
 .Placement-training button{
-    font-size: 14px !important;
+    font-size: 12px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -357,7 +360,7 @@ select:-webkit-autofill {
 }
 
 .course-ratings div span {
-    font-size: 18px !important;
+    font-size: 14px !important;
     color: #fff
 }
 
@@ -441,7 +444,6 @@ select:-webkit-autofill {
 
 
   .course-google-rating {
-    margin-right: 10px !important;
     letter-spacing: 1px;
     display: flex;
     align-items: center
@@ -535,7 +537,8 @@ select:-webkit-autofill {
 
 
 .course-ratings div span {
-    font-size: 15px !important;
+    font-size: 14px !important;
+    text-align: initial ;
     color: #fff;
     align-items: center;
     color: #4c4c4c !important;
@@ -567,7 +570,6 @@ select:-webkit-autofill {
 @media (max-width: 320px){
 
     .course-google-rating {
-        margin-right: 4px !important;
         letter-spacing: 1px;
         display: flex;
         align-items: center;

@@ -460,7 +460,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.25rem;
 }
-
+a
 h6, .h6 {
   font-size: 1rem;
 }
@@ -1148,7 +1148,7 @@ pre code {
   }
   .col-md-8 {
     flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    max-width: none !important;
   }
   .col-md-9 {
     flex: 0 0 75%;
@@ -10556,6 +10556,10 @@ h2{
     }
 
 
+    .banner-right-left-box-container{
+      flex-direction: column;
+    }
+
 
 
     .Placement-training{
@@ -10604,7 +10608,8 @@ h2{
 
     .course-ratings .course-ratings-stars{
       text-align: center;
-      margin: 0px -95px 0 0 !important;
+    
+      justify-content: center;
     }
 
 
@@ -11153,7 +11158,7 @@ text-align: center !important;
 
 
 .college .school{
-  height: 35px !important;
+  height: 20px !important;
   max-width: 100px !important;
   
 }
