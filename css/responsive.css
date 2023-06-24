@@ -138,7 +138,6 @@
     }
 
     .course-card-container{
-        height: 400px;
         overflow: scroll;
     }
 
@@ -155,7 +154,7 @@
     }
 
     .course-name-container{
-        max-width: 150px;
+      width: 100%;
     }
 
     .course-card-section{
@@ -443,6 +442,15 @@
 }
 
 
+@media screen and (min-width:901px) and (max-width:1080px){
+    .course-card-thumb{
+        grid-template-columns: auto auto;
+    }
+
+    .scaler-reciper-card{
+        width: 250px !important;
+    }
+}
 
 
 @media screen and (max-width:365px)

@@ -224,7 +224,7 @@ window.onload = function() {
 
 
   var digits = document.querySelectorAll('.learner-number .digit');
-digits.forEach(function(digit, index) {
+  digits.forEach(function(digit, index) {
   digit.style.animation = "fallingEffect 1s ease-in-out";
   digit.style.animationFillMode = "forwards";
   digit.style.animationDelay = (index + 1) * 0.1 + "s";
@@ -716,7 +716,7 @@ async function submitPopUpForm(event) {
 }
 
 
-//  ---------- payment gateway -----------
+//  ---------- Disable -----------
 
 
 

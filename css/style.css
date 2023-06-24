@@ -81,7 +81,7 @@ h2{
     position: absolute;
     content: "";
     border: 1px solid grey;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
  }
 
@@ -821,8 +821,12 @@ form select {
 .explore-courses-container{
     display: flex;
     margin-top: 50px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: auto;
+}
+
+.course-name-container{
+    width: 23%;
 }
 
 .course-card-thumb{
